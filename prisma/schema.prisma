@@ -6,6 +6,7 @@
 
 generator client {
   provider = "prisma-client-js"
+  output   = "./node_modules/@prisma/client"
 }
 
 datasource db {
@@ -18,4 +19,8 @@ model Post {
   id        Int       @id @default(autoincrement())
   title     String
   content   String
+}
+
+"engines": {
+  "node": ">=18"
 }
