@@ -101,10 +101,8 @@ app.get('/demo', function(req, res) {
     res.render('pages/demo');
 });  
 
-...
 // add this snippet after "var express = require('express')"
 var axios = require('axios');
-...
 
 
 // add this snippet before 
@@ -117,8 +115,6 @@ app.get('/weather', async (req, res) => {
       res.send('Error fetching weather data');
     }
   });
-  }
-});
 
 // Tells the app which port to run on
 app.listen(8080);
